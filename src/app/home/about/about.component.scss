@@ -1,0 +1,14 @@
+@import "mixins";
+
+.home-about {
+  text-align: center;
+  padding: 1rem;
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .about-paragraph {
+    @include center-aligned-wrapper;
+  }
+}

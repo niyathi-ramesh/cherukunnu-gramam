@@ -1,0 +1,39 @@
+@import "variables";
+
+@mixin reset-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin underline {
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    border-top: 2px solid $cg-white;
+    width: calc(80% - 1rem);
+  }
+}
+
+@mixin animated-underline {
+  @include underline;
+
+  &::after {
+    width: 0;
+    transition: width 0.2s ease 0s, left 0.2s ease 0s;
+  }
+
+  &:hover {
+    &::after {
+      width: calc(80% - 1rem);
+    }
+  }
+}
+
+@mixin center-aligned-wrapper {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}

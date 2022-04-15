@@ -6,7 +6,7 @@ import {
 } from '@angular/router';
 import { TranslateService } from '@ngx-translate/core';
 
-import { navList } from 'src/app/app.constants';
+import { defaultLang, navList } from 'src/app/app.constants';
 
 @Component({
   selector: 'cg-header',
@@ -24,8 +24,8 @@ export class HeaderComponent implements OnDestroy {
     private router: Router,
     private translateService: TranslateService
   ) {
-    this.translateService.setDefaultLang('en');
-    this.translateService.use(localStorage.getItem('lang') || 'en');
+    this.translateService.setDefaultLang(defaultLang);
+    this.translateService.use(sessionStorage.getItem('lang') || defaultLang);
 
     this.event$ = this.router.events.subscribe((event: NavigationEvent) => {
       if (event instanceof NavigationStart) {

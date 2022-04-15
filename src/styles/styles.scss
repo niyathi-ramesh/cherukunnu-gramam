@@ -19,7 +19,16 @@ body {
 }
 body {
   margin: 0;
-  font-family: "Open Sans", sans-serif;
+
+  * {
+    font-family: "Open Sans", sans-serif;
+  }
+}
+
+.malayalam-font {
+  * {
+    font-family: "Manjari", sans-serif;
+  }
 }
 
 .height-100 {

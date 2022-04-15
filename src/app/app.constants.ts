@@ -20,3 +20,5 @@ export const navList = [
     url: 'map',
   },
 ];
+
+export const defaultLang = 'en';

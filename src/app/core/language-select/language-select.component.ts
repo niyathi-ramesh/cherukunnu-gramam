@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+import { defaultLang } from 'src/app/app.constants';
+
 @Component({
   selector: 'cg-language-select',
   templateUrl: './language-select.component.html',
@@ -10,13 +12,13 @@ export class LanguageSelectComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {
-    this.lang = localStorage.getItem('lang') || 'en';
+    this.lang = sessionStorage.getItem('lang') || defaultLang;
   }
 
   changeLang(event: Event) {
     const lang = (event.target as HTMLSelectElement).value;
 
-    localStorage.setItem('lang', lang);
+    sessionStorage.setItem('lang', lang);
     window.location.reload();
   }
 }

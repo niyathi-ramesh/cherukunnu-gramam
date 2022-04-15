@@ -1,48 +1,11 @@
 <div class="adm-edu">
   <div class="administration">
-    <h1>Administration</h1>
-    <ul>
-      <li>District: Kannur</li>
-      <li>Taluk/Tehsil: Kannur</li>
-      <li>Block: Taliparamba</li>
-      <li>Assembly constituency: Kalliasseri</li>
-      <li>Police Station: Kannapuram</li>
-      <li>Post Office & PIN : Cherukunnu-670301</li>
-      <li>Telephone Exchange: Cherukunnu (0497)</li>
-      <li>Panchayat Office Contact : 0497-2860238</li>
-      <li>
-        Nearest Railway Stations: South-Kannapuram and north-Pazhayangadi.
-      </li>
-    </ul>
+    <h1>{{ "ADMINISTRATION" | translate }}</h1>
+    <cg-content-template [results]="administration"></cg-content-template>
   </div>
 
   <div class="education">
-    <h1>Education</h1>
-    <p>
-      The average literacy rate is more than 90%. The important schools of
-      Cherukunnu are:
-    </p>
-    <ul>
-      <li>Govt. Vocational Higher Secondary School</li>
-      <li>Govt. Higher Secondary School</li>
-      <li>Govt. Welfare Higher Secondary School</li>
-      <li>Govt. LP School Cherukunnu</li>
-      <li>Othayammadam UP School</li>
-      <li>Thavam Devi Vilasam LP School</li>
-      <li>Bakkitha Canossa English Medium School</li>
-      <li>Muslim L P School Pallichal</li>
-      <li>Bright English School</li>
-    </ul>
-
-    <p>The important Colleges are:</p>
-    <ul>
-      <li>Canossa College of Nursing</li>
-      <li>Co-operative Arts& Science College</li>
-      <li>Akshara College</li>
-      <li>Society College</li>
-      <li>Govt. Commercial Institute</li>
-      <li>MES College</li>
-      <li>ADLP School Pallikkara</li>
-    </ul>
+    <h1>{{ "EDUCATION" | translate }}</h1>
+    <cg-content-template [results]="education"></cg-content-template>
   </div>
 </div>

@@ -1,0 +1,40 @@
+{
+  "results": [
+    {
+      "type": "paragraph",
+      "content": [
+        "The average literacy rate is more than 90%. The important schools of Cherukunnu are:"
+      ]
+    },
+    {
+      "type": "list",
+      "content": [
+        "Govt. Vocational Higher Secondary School",
+        "Govt. Higher Secondary School",
+        "Govt. Welfare Higher Secondary School",
+        "Govt. LP School Cherukunnu",
+        "Othayammadam UP School",
+        "Thavam Devi Vilasam LP School",
+        "Bakkitha Canossa English Medium School",
+        "Muslim L P School Pallichal",
+        "Bright English School"
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": ["The important Colleges are:"]
+    },
+    {
+      "type": "list",
+      "content": [
+        "Canossa College of Nursing",
+        "Co-operative Arts& Science College",
+        "Akshara College",
+        "Society College",
+        "Govt. Commercial Institute",
+        "MES College",
+        "ADLP School Pallikkara"
+      ]
+    }
+  ]
+}

@@ -5,6 +5,7 @@ import { HomeComponent } from './home.component';
 import { AboutComponent } from './about/about.component';
 import { AdministrationEducationComponent } from './administration-education/administration-education.component';
 import { HeroComponent } from './hero/hero.component';
+import { SharedModule } from '../shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,7 @@ import { HeroComponent } from './hero/hero.component';
     AdministrationEducationComponent,
     HeroComponent,
   ],
-  imports: [CommonModule],
+  imports: [CommonModule, SharedModule],
   exports: [HomeComponent],
 })
 export class HomeModule {}

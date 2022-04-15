@@ -51,3 +51,12 @@ h1,
 h2 {
   text-align: center;
 }
+
+.flex-align-center {
+  display: flex;
+  align-items: center;
+}
+
+.page-padding-top {
+  padding: calc($header-height + 2rem) 2rem 2rem;
+}

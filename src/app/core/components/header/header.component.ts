@@ -4,6 +4,7 @@ import {
   NavigationStart,
   Event as NavigationEvent,
 } from '@angular/router';
+import { TranslateService } from '@ngx-translate/core';
 
 import { navList } from 'src/app/app.constants';
 
@@ -19,7 +20,13 @@ export class HeaderComponent implements OnDestroy {
   event$;
   openNav = false;
 
-  constructor(private router: Router) {
+  constructor(
+    private router: Router,
+    private translateService: TranslateService
+  ) {
+    this.translateService.setDefaultLang('en');
+    this.translateService.use(localStorage.getItem('lang') || 'en');
+
     this.event$ = this.router.events.subscribe((event: NavigationEvent) => {
       if (event instanceof NavigationStart) {
         this.activeUrl = event.url.split('/').pop();

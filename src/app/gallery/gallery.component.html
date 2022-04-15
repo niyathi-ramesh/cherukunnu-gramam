@@ -1,0 +1,5 @@
+<div class="gallery-container page-padding-top">
+  <div class="gallery-item" *ngFor="let img of galleryImages">
+    <img [src]="'assets/images/' + img.url + '.jpg'" [alt]="img.url" />
+  </div>
+</div>

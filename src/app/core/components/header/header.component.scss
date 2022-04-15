@@ -29,6 +29,9 @@
       font-size: 1rem;
       color: $cg-white;
       transition: 1s ease 0s;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
 
       div {
         line-height: 1.4;
@@ -206,7 +209,7 @@
 }
 
 // On scroll styles
-.navbar-scroll {
+.navbar-with-bg {
   background-color: $cg-white;
   border-bottom: 1px solid #e7eaec;
 

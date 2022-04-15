@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
+import { defaultLang } from '../app.constants';
 
 @Component({
   selector: 'eg-gallery',
@@ -29,7 +31,11 @@ export class GalleryComponent implements OnInit {
     { url: 'gallery-20' },
   ];
 
-  constructor() {}
+  constructor(private translateService: TranslateService) {
+    const lang = sessionStorage.getItem('lang') || defaultLang;
+    this.translateService.setDefaultLang(defaultLang);
+    this.translateService.use(lang);
+  }
 
   ngOnInit(): void {}
 }

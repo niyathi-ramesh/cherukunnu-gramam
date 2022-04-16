@@ -1,7 +1,7 @@
 import { Component, OnDestroy, Renderer2 } from '@angular/core';
-import { TranslateService } from '@ngx-translate/core';
 
 import { defaultLang } from './app.constants';
+import { UtilService } from './shared/services/util.service';
 
 @Component({
   selector: 'cg-root',
@@ -9,13 +9,9 @@ import { defaultLang } from './app.constants';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent implements OnDestroy {
-  constructor(
-    private renderer: Renderer2,
-    private translateService: TranslateService
-  ) {
+  constructor(private renderer: Renderer2, private utilService: UtilService) {
     const lang = sessionStorage.getItem('lang') || defaultLang;
-    this.translateService.setDefaultLang(defaultLang);
-    this.translateService.use(lang);
+    this.utilService.initializeLanguage();
 
     if (lang === 'ml') {
       this.renderer.addClass(document.body, 'malayalam-font');

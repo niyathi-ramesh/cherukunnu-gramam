@@ -10,6 +10,7 @@ import {
 } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { ContentTemplateComponent } from './components/content-template/content-template.component';
+import { UtilService } from './services/util.service';
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(http: HttpClient) {
@@ -30,6 +31,6 @@ export function HttpLoaderFactory(http: HttpClient) {
     HttpClientModule,
   ],
   exports: [TranslateModule, ContentTemplateComponent],
-  providers: [HttpClient, TranslateStore],
+  providers: [HttpClient, TranslateStore, UtilService],
 })
 export class SharedModule {}

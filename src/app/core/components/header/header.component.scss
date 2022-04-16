@@ -211,7 +211,7 @@
 // On scroll styles
 .navbar-with-bg {
   background-color: $cg-white;
-  border-bottom: 1px solid #e7eaec;
+  border-bottom: $border-light;
 
   .header-left .place-names {
     color: $cg-black;

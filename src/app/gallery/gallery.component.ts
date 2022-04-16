@@ -16,7 +16,6 @@ export class GalleryComponent implements OnInit {
     { url: 'gallery-5' },
     { url: 'gallery-6' },
     { url: 'gallery-7' },
-    // { url: 'gallery-8' },
     { url: 'gallery-9' },
     { url: 'gallery-10' },
     { url: 'gallery-11' },

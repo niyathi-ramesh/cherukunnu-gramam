@@ -10,15 +10,10 @@ export const navList = [
     url: 'gallery',
   },
   {
-    name: 'directory',
-    displayName: 'DIRECTORY',
-    url: 'directory',
-  },
-  {
     name: 'mapOfVillage',
     displayName: 'MAP',
     url: 'map',
   },
 ];
 
-export const defaultLang = 'en';
+export const defaultLang = 'ml';
